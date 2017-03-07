@@ -1,0 +1,19 @@
+-main Main
+-lib compiletime
+-cp src
+# -dce full
+-dce std
+# -D luajit=true
+# -D dce-debug=true
+# -D loop-unroll-max-cost=25000
+-D no-inline=true
+-D no-opt=true
+
+--each
+
+--next
+-python bin/output.py
+--next
+-lua bin/output.lua
+
+-cmd lua bin/output.lua
