@@ -6,7 +6,7 @@ class CommandLineUserInterface implements IUserInterface {
   inline public function new():Void {
   };
 
-  public function readUserInput():String {
+  public inline function readUserInput():String {
     return Sys.stdin().readLine();
   }
 }

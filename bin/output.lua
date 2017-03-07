@@ -925,7 +925,6 @@ obfuscator.Obfuscator.super = function(self,minimumLoops,maximumLoops)
   if (minimumLoops == nil) then 
     minimumLoops = 0;
   end;
-  self.arraysOfThing = _hx_tab_array({[0]=routines.conc.CapitalizedLetter.new() }, 1);
   self.routineArray = Array.new();
   self.minimumLoops = minimumLoops;
   self.maximumLoops = maximumLoops;

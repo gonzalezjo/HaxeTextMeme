@@ -11,7 +11,7 @@ class Obfuscator {
   private var minimumLoops:Int;
   private var maximumLoops:Int;
 
-  public function new(minimumLoops:Int = 0, maximumLoops:Int = 3) {
+  public inline function new(minimumLoops:Int = 0, maximumLoops:Int = 3) {
     this.minimumLoops = minimumLoops;
     this.maximumLoops = maximumLoops;
 
@@ -20,7 +20,7 @@ class Obfuscator {
 
   }
 
-  public function obfuscate(message:String) {
+  public inline function obfuscate(message:String) {
     var output = message;
 
     for (i in minimumLoops...Std.random(maximumLoops + 1))

@@ -5,9 +5,10 @@
 -dce std
 # -D luajit=true
 # -D dce-debug=true
-# -D loop-unroll-max-cost=25000
--D no-inline=true
--D no-opt=true
+-D loop-unroll-max-cost=25000
+-D no-inline=false
+-D no-opt=false
+-D analyzer-module
 
 --each
 

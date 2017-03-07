@@ -1240,8 +1240,8 @@ _hx_classes["python.Boot"] = python_Boot
 
 class obfuscator_Obfuscator:
     _hx_class_name = "obfuscator.Obfuscator"
-    __slots__ = ("routineArray", "minimumLoops", "maximumLoops", "arraysOfThing")
-    _hx_fields = ["routineArray", "minimumLoops", "maximumLoops", "arraysOfThing"]
+    __slots__ = ("routineArray", "minimumLoops", "maximumLoops")
+    _hx_fields = ["routineArray", "minimumLoops", "maximumLoops"]
     _hx_methods = ["obfuscate"]
     _hx_statics = ["routineList"]
 
@@ -1250,7 +1250,6 @@ class obfuscator_Obfuscator:
             minimumLoops = 0
         if (maximumLoops is None):
             maximumLoops = 3
-        self.arraysOfThing = [routines_conc_CapitalizedLetter()]
         self.routineArray = list()
         self.minimumLoops = minimumLoops
         self.maximumLoops = maximumLoops
